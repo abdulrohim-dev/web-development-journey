@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Icon: equals-light
+  Set: Phosphor
+  Author: Phosphor Icons (https://github.com/phosphor-icons/core)
+  License: MIT (https://github.com/phosphor-icons/core/blob/main/LICENSE)
+  Source: https://iconify.design
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 256 256"
+     width="256"
+     height="256">
+  <title>Minimalist Hamburger Menu Icon</title>
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/"
+             xmlns:cc="http://creativecommons.org/ns#">
+      <cc:Work rdf:about="">
+        <dc:title>Minimalist Hamburger Menu Icon</dc:title>
+        <dc:description>A simple two-line hamburger menu icon, commonly used in web and app design for navigation menus. Perfect for UI/UX projects, mobile apps, and responsive website designs.</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Phosphor Icons</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:source>https://github.com/phosphor-icons/core</dc:source>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Phosphor Icons</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <cc:license rdf:resource="https://github.com/phosphor-icons/core/blob/main/LICENSE"/>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>hamburger-menu</rdf:li>
+            <rdf:li>menu-icon</rdf:li>
+            <rdf:li>navigation-icon</rdf:li>
+            <rdf:li>UI-icon</rdf:li>
+            <rdf:li>UX-icon</rdf:li>
+            <rdf:li>minimalist-icon</rdf:li>
+            <rdf:li>web-design</rdf:li>
+            <rdf:li>app-design</rdf:li>
+            <rdf:li>responsive-design</rdf:li>
+            <rdf:li>interface-icon</rdf:li>
+            <rdf:li>mobile-app-icon</rdf:li>
+            <rdf:li>navigation-bar</rdf:li>
+            <rdf:li>menu-button</rdf:li>
+            <rdf:li>simple-icon</rdf:li>
+            <rdf:li>flat-design</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="https://github.com/phosphor-icons/core/blob/main/LICENSE">
+        <dc:title>MIT (MIT)</dc:title>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path fill="currentColor" d="M222 160a6 6 0 0 1-6 6H40a6 6 0 0 1 0-12h176a6 6 0 0 1 6 6M40 102h176a6 6 0 0 0 0-12H40a6 6 0 0 0 0 12"/>
+</svg>
