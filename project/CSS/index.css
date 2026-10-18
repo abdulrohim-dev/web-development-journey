@@ -1,6 +1,3 @@
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +10,12 @@ html {
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   color: #444;
@@ -29,23 +26,24 @@ body {
 /* NAVIGATION */
 .header {
   background-color: #ffff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: .5rem 1.3rem;
- }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.3rem;
+}
 
- .header-icon {
+.header-icon {
   display: flex;
   align-items: center;
   gap: 1.5rem;
- }
+}
 
 .hero-sec__text-box__img {
   width: 7rem;
@@ -75,10 +73,10 @@ nav ul {
   font-size: 1rem;
   background-color: #4169e1;
   color: #ffff;
-  padding: .75rem 1.75rem;
+  padding: 0.75rem 1.75rem;
   border-radius: 5rem;
 }
-.btn-blue:hover ,
+.btn-blue:hover,
 .btn-blue:focus {
   background-color: #597de9;
 }
@@ -89,7 +87,7 @@ nav ul {
 .about-sec {
   display: grid;
   gap: 1.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .hero-sec {
@@ -99,7 +97,7 @@ nav ul {
   width: 100%;
   height: 350px;
   object-fit: cover;
-} 
+}
 
 .hero-sec__container,
 .about-sec__container,
@@ -114,15 +112,15 @@ nav ul {
   transform: translate(-50%, -100%);
   display: flex;
   flex-direction: column;
-  gap: .5rem;
-  align-items: center; 
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .about-sec__text-box {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -100%);
-  gap: .25rem;
+  gap: 0.25rem;
   overflow: hidden;
 }
 
@@ -137,7 +135,7 @@ nav ul {
   margin-bottom: 0;
 }
 
-#adjacent h2{
+#adjacent h2 {
   color: #ffff;
   font-size: 1.79rem;
 }
@@ -154,7 +152,7 @@ nav ul {
 .footer-column {
   margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: .135rem solid #b9b2b2;
+  border-bottom: 0.135rem solid #b9b2b2;
   cursor: pointer;
 }
 
@@ -174,7 +172,7 @@ nav ul {
   cursor: pointer;
 }
 
-.footer-content  li{
+.footer-content li {
   list-style: none;
   padding-top: 1rem;
   line-height: 1.5;
@@ -193,7 +191,7 @@ nav ul {
 
 .footer-column.active .footer-content {
   max-height: 100%;
-  animation: fade .5s ease-in-out;
+  animation: fade 0.5s ease-in-out;
 }
 
 .footer-column.active svg {
@@ -201,7 +199,7 @@ nav ul {
 }
 
 svg {
-  transition: transform .05s ease-in;
+  transition: transform 0.05s ease-in;
 }
 
 .paragh-link {
@@ -224,10 +222,7 @@ svg {
   }
 }
 
-
-
 /* MODAL WINDOW */
-
 
 .modal {
   position: fixed;
@@ -238,8 +233,9 @@ svg {
   background-color: rgba(250, 250, 250);
   backdrop-filter: blur(4px);
   z-index: 1000;
-  /* transition: transform 0.5s ease; */
-  animation: showMenu .7s ease-in;
+  /* transform: translateY(-100%); */
+  transition: transform 0.5s ease;
+  /* animation: showMenu .7s ease-in; */
 }
 @keyframes showMenu {
   0% {
@@ -247,7 +243,7 @@ svg {
     transform: scaleY(0);
   }
   80% {
-    transform: scaleY(.8);
+    transform: scaleY(0.8);
   }
   100% {
     transform: scaleY(1);
@@ -262,7 +258,7 @@ svg {
   display: grid;
   gap: 2.5rem;
   list-style: none;
-  animation: fade .5s ease-in-out;
+  animation: fade 0.5s ease-in-out;
 }
 .modal__link {
   text-decoration: none;
@@ -278,7 +274,7 @@ svg {
   color: inherit;
   position: absolute;
   top: 0.001025rem;
-  right: .901235rem;
+  right: 0.901235rem;
   font-size: 3rem;
   cursor: pointer;
   border: none;
@@ -289,15 +285,15 @@ svg {
 .hidden {
   visibility: hidden;
   opacity: 0;
+  transform: translateY(0);
 }
 
-
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .header {
-    padding: .65rem 5rem;
+    padding: 0.65rem 5rem;
   }
-  .hamburger-con, 
-  .hamburger{
+  .hamburger-con,
+  .hamburger {
     display: none;
   }
   nav ul {
@@ -312,7 +308,7 @@ svg {
     font-size: 1.5rem;
     font-weight: 300;
   }
-  .nav__link:hover{
+  .nav__link:hover {
     color: #444;
   }
   .hero-sec__text-box__paragh {
@@ -327,7 +323,7 @@ svg {
   .about_text-box h2 {
     font-size: 2.2rem;
   }
-  #adjacent h2{
+  #adjacent h2 {
     font-size: 1.92rem;
   }
   .about_text-box p {
@@ -336,15 +332,15 @@ svg {
   .btn-blue {
     font-size: 1.5rem;
     padding: 1.6rem 2.23rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
   .about-btn {
     font-size: 1.2rem;
     padding: 1.3rem 1.85rem;
-    margin-top: .1025;
+    margin-top: 0.1025;
   }
   .hero-sec__text-box__img {
-     width: 15rem;
+    width: 15rem;
   }
   .about-sec {
     grid-template-columns: repeat(2, 1fr);
@@ -368,6 +364,6 @@ svg {
   }
   .paragh-span {
     width: 100%;
-    border: .1rem solid #eae5e5;
+    border: 0.1rem solid #eae5e5;
   }
 }
