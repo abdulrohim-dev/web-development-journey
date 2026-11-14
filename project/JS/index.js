@@ -29,6 +29,7 @@ footerColumn.forEach(col => {
   });
 });
 
+
 header.addEventListener('mouseover', function(e) {
   const handleHover = e.target.closest('.nav__link');
   console.log(handleHover);
