@@ -41,9 +41,31 @@ header.addEventListener('mouseover', function(e) {
     handler.classList.remove('handler-active');
 
   });
-  
+
   // add active class
   targetHandler.classList.add('handler-active');
+  console.log('classes', targetHandler.className);
+  // allSection.forEach(sec => sec.classList.add('blur'));
+
+  const hcoord = header.getBoundingClientRect().height;
+  console.log(hcoord);
+});
+
+header.addEventListener('mouseout', function(e) {
+  const handleHover = e.target.closest('.nav__link');
+  console.log(handleHover);
+
+  if(!handleHover) return;
+
+  const targetHandler = handlerSection.querySelector(`.${handleHover.dataset.target}`);
+  // remove active class
+  handlerSection.querySelectorAll('.handler-active').forEach(handler => {
+    handler.classList.remove('handler-active');
+
+  });
+
+  // add active class
+  targetHandler.classList.remove('handler-active');
   console.log('classes', targetHandler.className);
   // allSection.forEach(sec => sec.classList.add('blur'));
 
