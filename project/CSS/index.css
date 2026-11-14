@@ -232,7 +232,7 @@ aside h4 {
   
 }
 .handler--6 input {
-  background-color: none;
+  /* background-color: none; */
   fill: none;
   border: none;
   color: #333;
