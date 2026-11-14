@@ -22,9 +22,12 @@ body {
   /* line-height: 1.4; */
   position: relative;
 }
-
+body:has(.handler.handler-active) .overlay {
+  display: block;
+}
 /* NAVIGATION */
 .header {
+  position: relative;
   background-color: #ffff;
   position: fixed;
   top: 0;
@@ -82,6 +85,13 @@ nav ul {
 }
 
 /* SECTION */
+section.blur {
+  filter: blur(4px);
+  height: 100%;
+  /* background-color: #444; */
+  /* backdrop-filter: blur(3px); */
+  transition: all 0.5s;
+}
 
 .hero-sec,
 .about-sec {
@@ -91,6 +101,7 @@ nav ul {
 }
 
 .hero-sec {
+  /* height: calc(100% - 35.6667px); */
   padding-top: 50px;
 }
 .about-sec img {
@@ -141,6 +152,96 @@ nav ul {
 }
 #adjacent p {
   color: #ffff;
+}
+
+ .handlers--section {
+  background-color: #ffff;
+  position: fixed;
+  /* top: 35.6667px; */
+  left: 0;
+  width: 100%;
+  padding-top: .5rem;
+  z-index: 1100;
+  transition: max-height 1.4ms ease;
+  cursor: pointer;
+}
+
+.handler {
+  /* background-color: #ffff; */
+  display: none; 
+  max-height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: max-height 1.4ms ease;
+  cursor: pointer;
+  z-index: 30;
+}
+
+ .handler.handler-active {
+  /* background-color: #ffff; */
+  display: grid;
+  grid-template-columns: repeat(2, 20rem);
+  padding: 3.5rem 1.5rem;
+  margin-bottom: 3rem;
+  max-height: 100%;
+  margin: 1.5rem;
+
+  animation: fade 0.5s ease-in-out;
+  /* justify-content: center; */
+  z-index: 30;
+}
+
+#handler--4 {
+  grid-template-columns: repeat(3, 20rem);
+}
+
+.handler--5 {
+  grid-template-columns: 1fr;
+}
+
+article h4,
+aside h4 {
+  color: #ccc;
+  font-weight: 700;
+  margin-bottom: .95rem;
+}
+
+.handler--6 {
+  /* background-color: #ffff; */
+  /* display: flex; */
+  gap: 1rem;
+  align-content: center;
+  align-items: center;
+}
+
+.handler--6 svg {
+  width: 1.8rem;
+  
+}
+.handler--6 input {
+  border: none;
+  color: #333;
+  padding: .7rem 0;
+  font-size: 1.8rem;
+}
+
+article ul {
+  font-size: 1.6rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  color: #000;
+}
+
+article p {
+  margin-top: 1.5rem;
+}
+
+aside p {
+  margin-bottom: 1rem;
 }
 
 /* FOOTER */
@@ -286,6 +387,20 @@ svg {
   visibility: hidden;
   opacity: 0;
   transform: translateY(0);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  top: 35.6667;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 35.667px);
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  transition: all 0.5s;
+  z-index: 90;
+  display: none;
 }
 
 @media (min-width: 768px) {
