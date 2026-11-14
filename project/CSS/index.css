@@ -157,24 +157,25 @@ section.blur {
  .handlers--section {
   background-color: #ffff;
   position: fixed;
-  top: 35.6667px;
+  top: 39.6667px;
   left: 0;
   width: 100%;
-  padding-top: .5rem;
+  height: auto;
+  /* padding-top: .5rem; */
   z-index: 1100;
   transition: max-height 1.4ms ease;
   cursor: pointer;
 }
 
 .handler {
-  background-color: #ffff;
+  /* background-color: #ffff; */
   display: none; 
   max-height: 0;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   transition: max-height 1.4ms ease;
   cursor: pointer;
   z-index: 30;
@@ -182,7 +183,7 @@ section.blur {
 }
 
  .handler.handler-active {
-  background-color: #ffff;
+  /* background-color: #ffff; */
   display: grid;
   grid-template-columns: repeat(2, 20rem);
   padding: 3.5rem 1.5rem;
@@ -212,15 +213,16 @@ aside h4 {
 }
 
 .handler--6 {
-  background-color: #ffff;
+  /* background-color: #ffff; */
   /* display: flex; */
-  gap: 1rem;
+  gap: 0.001rem;
   align-content: center;
   align-items: center;
 }
 
 .handler--6 svg {
   width: 1.8rem;
+  color: #ccc;
   
 }
 .handler--6 input {
